@@ -1,0 +1,27 @@
+title: Sixth Workshop on Memory-Centric Computing Systems
+description: 6th Workshop on Memory-Centric Computing Systems (MCCSys) @ ISCA 2026
+baseurl: ""
+url: "https://unrealismail.github.io/mccsys-isca26"
+
+# Theme settings
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
+
+# Site settings
+show_downloads: false
+google_analytics:
+
+# Workshop details
+workshop:
+  title: "MCCSys@ISCA'26"
+  full_title: "6th Workshop on Memory-Centric Computing Systems"
+  date: ""
+  location: ""
+  venue: ""
+  conference: "ISCA 2026"
+  conference_full: "International Symposium on Computer Architecture 2026"
+  submission_deadline: ""
+  notification_date: ""
+  submission_form: ""
+  livestream: "TBD"
