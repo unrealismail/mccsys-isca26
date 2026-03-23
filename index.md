@@ -20,7 +20,7 @@ layout: default
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="hero-date">JUNE 28<sup>th</sup>, 2026</div>
-  <h1 class="hero-title">MCCSys 2026</h1>
+  <h1 class="hero-title">MCCSys@ISCA'26</h1>
   <h2 class="hero-subtitle">6th Workshop on Memory-Centric Computing Systems</h2>
   <p class="hero-conference">In conjunction with the International Symposium on Computer Architecture 2026 <br>(ISCA 2026)</p>
   <p class="hero-location"> Raleigh, USA</p>
@@ -42,7 +42,7 @@ layout: default
   </div>
   <div class="date-item">
     <div class="date-label">Workshop Date</div>
-    <div class="date-value">June 27th, 2026</div>
+    <div class="date-value">June 28th, 2026</div>
   </div>
 </div>
 
@@ -91,7 +91,7 @@ computing systems:
   </div>
   <div class="key-date-row">
     <span class="key-date-label">Workshop Date</span>
-    <span class="key-date-value">June 27th, 2026 (Full Day)</span>
+    <span class="key-date-value">June 28th, 2026 (Full Day)</span>
   </div>
 </div>
 
