@@ -32,6 +32,10 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          # Authenticate remote_theme fetch + github-metadata to avoid transient
+          # unauthenticated GitHub API rate-limit failures during the build.
+          GITHUB_TOKEN: ${{ github.token }}
+          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

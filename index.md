@@ -12,15 +12,15 @@ layout: default
 
 ---
 
+{% include agenda.html %}
+
+---
+
 {% include call-for-presentations.html %}
 
 ---
 
 {% include key-dates.html %}
-
----
-
-{% include agenda.html %}
 
 ---
 
