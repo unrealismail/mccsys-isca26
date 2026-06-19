@@ -1,12 +1,10 @@
 title: Sixth Workshop on Memory-Centric Computing Systems
 description: 6th Workshop on Memory-Centric Computing Systems (MCCSys) @ ISCA 2026
 baseurl: ""
-url: "https://unrealismail.github.io/mccsys-isca26"
+url: "http://127.0.0.1:4000"
 
-# Theme settings
-remote_theme: pages-themes/primer@v0.6.0
-plugins:
-  - jekyll-remote-theme
+# Use minima theme locally (no remote download needed)
+theme: minima
 
 # Site settings
 show_downloads: false

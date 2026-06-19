@@ -1,6 +1,5 @@
 ---
 ---
-
 /* MCCSys 2026 - Custom Styles */
 /* Purple theme with modern enhancements */
 
@@ -149,7 +148,7 @@ body {
 /* Hero Section with Background Image */
 .hero-section {
   background: var(--bg-gradient);
-  background-image: 
+  background-image:
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="3" fill="rgba(255,255,255,0.08)"/><circle cx="140" cy="30" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="180" cy="80" r="2.5" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="120" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="100" cy="100" r="4" fill="rgba(255,255,255,0.06)"/><circle cx="160" cy="140" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="180" r="3" fill="rgba(255,255,255,0.08)"/><circle cx="120" cy="160" r="2" fill="rgba(255,255,255,0.1)"/><rect x="25" y="60" width="30" height="15" rx="2" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/><rect x="70" y="130" width="25" height="12" rx="2" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/><rect x="130" y="85" width="35" height="18" rx="2" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/><line x1="40" y1="68" x2="80" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/><line x1="100" y1="100" x2="130" y2="94" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/><line x1="82" y1="136" x2="100" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/></svg>'),
     var(--bg-gradient);
@@ -171,11 +170,11 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at 20% 30%, rgba(187, 143, 206, 0.2) 0%, transparent 40%),
-              radial-gradient(ellipse at 80% 70%, rgba(155, 89, 182, 0.15) 0%, transparent 40%);
+    radial-gradient(ellipse at 80% 70%, rgba(155, 89, 182, 0.15) 0%, transparent 40%);
   pointer-events: none;
 }
 
-.hero-section > * {
+.hero-section>* {
   position: relative;
   z-index: 1;
 }
@@ -193,7 +192,7 @@ body {
   font-weight: 800;
   margin: 0.5rem 0;
   color: white !important;
-  text-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   letter-spacing: -1px;
 }
 
@@ -214,7 +213,21 @@ body {
 .hero-location {
   font-size: 1rem;
   opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
+.hero-time {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hero-room {
+  font-size: 1.05rem;
+  opacity: 0.9;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .hero-location a {
@@ -248,7 +261,7 @@ body {
 .btn-primary:hover {
   background: var(--bg-light);
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .btn-secondary {
@@ -258,7 +271,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-4px);
 }
 
@@ -451,7 +464,7 @@ h3 {
 }
 
 .organizer-card-lead .organizer-email a {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .organizer-name {
@@ -489,6 +502,142 @@ h3 {
   text-align: center;
   color: var(--text-light);
   border: 2px dashed #ddd;
+}
+
+/* Agenda Table */
+.agenda-table-container {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(92, 45, 145, 0.1);
+}
+
+.agenda-table thead {
+  background: var(--bg-gradient);
+  color: white;
+}
+
+.agenda-table th {
+  padding: 1.1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+
+.agenda-table th.col-time {
+  width: 150px;
+  text-align: center;
+}
+
+.agenda-table th.col-talk {
+  width: auto;
+}
+
+.agenda-table th.col-materials {
+  width: 140px;
+  text-align: center;
+}
+
+.agenda-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.agenda-table tbody tr:hover:not(.break-row) {
+  background: var(--bg-light);
+}
+
+.agenda-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.agenda-table td {
+  padding: 1.1rem 1.5rem;
+  vertical-align: middle;
+}
+
+.time-cell {
+  font-weight: 600;
+  color: var(--primary-color);
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.talk-cell {
+  line-height: 1.6;
+}
+
+.talk-title {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.talk-speaker {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.talk-speaker a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.talk-speaker a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.materials-cell {
+  text-align: center;
+  color: var(--text-light);
+}
+
+.material-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white !important;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.material-btn:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(92, 45, 145, 0.25);
+}
+
+/* Break rows */
+.break-row {
+  background: linear-gradient(135deg, #f9f7fc 0%, #f3eef8 100%);
+}
+
+.break-row:hover {
+  background: linear-gradient(135deg, #f9f7fc 0%, #f3eef8 100%) !important;
+}
+
+.break-cell {
+  text-align: center !important;
+  font-weight: 600;
+  color: var(--primary-light);
+  font-size: 1.05rem;
+  padding: 1rem 1.5rem;
 }
 
 /* Livestream Section */
@@ -626,7 +775,7 @@ h3 {
   padding: 2rem;
   margin-top: 3rem;
   background: var(--primary-dark);
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   border-radius: var(--border-radius);
 }
 
@@ -641,36 +790,36 @@ h3 {
     margin: -1rem -1rem 1rem -1rem;
     border-radius: 0 0 20px 20px;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
     letter-spacing: 0;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .hero-date {
     font-size: 0.9rem;
     letter-spacing: 2px;
   }
-  
+
   .hero-conference,
   .hero-location {
     font-size: 0.9rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .btn {
     width: 100%;
     max-width: 280px;
   }
-  
+
   /* Nav bar mobile */
   .nav-bar {
     padding: 0.6rem 1rem;
@@ -678,124 +827,151 @@ h3 {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .nav-brand {
     font-size: 1rem;
   }
-  
+
   .nav-links {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.3rem;
   }
-  
+
   .nav-links a {
     padding: 0.3rem 0.6rem;
     font-size: 0.75rem;
   }
-  
+
   .nav-buttons {
     padding: 0.6rem 1rem;
     margin: 0 -1rem 1rem -1rem;
   }
-  
+
   .nav-buttons a {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
-  
+
   body {
     font-size: 1rem;
     line-height: 1.7;
   }
-  
+
   h2 {
     font-size: 1.6rem;
     margin-top: 2rem;
   }
-  
+
   h3 {
     font-size: 1.3rem;
   }
-  
+
   .topics-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .key-dates-section {
     padding: 1.5rem;
   }
-  
+
   .key-date-row {
     flex-direction: column;
     text-align: center;
     gap: 0.3rem;
     padding: 1rem 0;
   }
-  
+
   .key-date-label {
     font-size: 0.95rem;
   }
-  
+
   .key-date-value {
     text-align: center;
     font-size: 1rem;
   }
-  
+
   /* YouTube embed mobile */
   .youtube-embed {
     margin: 1rem auto;
   }
-  
+
   .livestream-section {
     padding: 1.5rem;
   }
-  
+
   .livestream-section h3 {
     font-size: 1.2rem;
   }
-  
+
   /* Past editions mobile */
   .past-editions-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .past-edition-item {
     padding: 1rem;
   }
-  
+
   /* Dates sidebar mobile */
   .dates-sidebar {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   /* Feature grid mobile */
   .feature-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .feature-item {
     padding: 1.5rem;
   }
-  
+
+  /* Agenda table mobile */
+  .agenda-table th,
+  .agenda-table td {
+    padding: 0.85rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .agenda-table th.col-time {
+    width: 100px;
+  }
+
+  .time-cell {
+    font-size: 0.9rem;
+  }
+
+  .talk-title {
+    font-size: 1rem;
+  }
+
+  .talk-speaker {
+    font-size: 0.9rem;
+  }
+
+  .break-cell {
+    font-size: 0.95rem;
+  }
+
   /* Placeholders mobile */
   .agenda-placeholder,
   .speakers-placeholder {
     padding: 2rem 1rem;
   }
-  
+
   /* Contact section mobile */
   .contact-section {
     padding: 1.5rem;
   }
-  
+
   /* Footer mobile */
   .footer-section {
     padding: 1.5rem;
     margin-top: 2rem;
   }
-  
+
   /* HR mobile */
   hr {
     margin: 2rem 0;
@@ -1002,16 +1178,16 @@ hr {
     padding: 1.25rem;
     gap: 1rem;
   }
-  
+
   .organizer-photo img {
     width: 80px;
     height: 80px;
   }
-  
+
   .organizer-info h4 {
     font-size: 1.1rem;
   }
-  
+
   /* On mobile, bio is always visible since hover doesn't work well */
   .organizer-bio {
     max-height: none;
@@ -1019,26 +1195,167 @@ hr {
     margin-top: 0.75rem;
     font-size: 0.9rem;
   }
-  
+
   .organizer-email {
     font-size: 0.85rem;
   }
-  
+
   .event-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .event-info {
     padding: 1.5rem;
   }
-  
+
   .event-map {
     min-height: 250px;
   }
-  
+
   .event-map iframe {
     min-height: 250px;
+  }
+}
+
+/* Speaker Cards */
+.speakers-section {
+  margin: 2rem 0;
+}
+
+.speaker-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.speaker-item:hover {
+  box-shadow: var(--card-shadow);
+  background: #f3eef8;
+}
+
+.speaker-photo {
+  flex-shrink: 0;
+}
+
+.speaker-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-light);
+  transition: all 0.3s ease;
+}
+
+.speaker-item:hover .speaker-photo img {
+  border-color: var(--primary-color);
+}
+
+.speaker-info {
+  flex: 1;
+}
+
+.speaker-info h4 {
+  margin: 0 0 0.3rem 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.speaker-info h4 a {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+.speaker-info h4 a:hover {
+  text-decoration: underline;
+}
+
+.speaker-affiliation {
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.speaker-talk-title {
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Bio and abstract hidden by default, expand on hover */
+.speaker-bio {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+.speaker-item:hover .speaker-bio {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 0.75rem;
+}
+
+.speaker-abstract {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+.speaker-item:hover .speaker-abstract {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 0.75rem;
+}
+
+/* Speaker mobile styles */
+@media (max-width: 768px) {
+  .speaker-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .speaker-photo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .speaker-info h4 {
+    font-size: 1.1rem;
+  }
+
+  /* On mobile, bio and abstract always visible since hover doesn't work */
+  .speaker-bio {
+    max-height: none;
+    opacity: 1;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .speaker-abstract {
+    max-height: none;
+    opacity: 1;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1047,28 +1364,28 @@ hr {
   .hero-title {
     font-size: 1.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .nav-links a {
     padding: 0.25rem 0.5rem;
     font-size: 0.7rem;
   }
-  
+
   h2 {
     font-size: 1.4rem;
   }
-  
+
   .key-dates-section {
     padding: 1rem;
   }
-  
+
   .organizer-item {
     padding: 1rem;
   }
-  
+
   .organizer-photo img {
     width: 70px;
     height: 70px;
