@@ -23,7 +23,7 @@
       <td class="time-cell">08:30 – 09:30</td>
       <td class="talk-cell">
         <div class="talk-title">Memory-Centric Computing</div>
-        <div class="talk-speaker">Onur Mutlu</div>
+        <div class="talk-speaker">Onur Mutlu & Ismail Emir Yuksel</div>
       </td>
       <td class="materials-cell">—</td>
     </tr>
@@ -58,8 +58,9 @@
     <tr>
       <td class="time-cell">11:30 – 12:00</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
-        <div class="talk-speaker"><a href="#speaker-3">Peiming Yang</a> &amp; <a href="#speaker-4">Sankeerth Durvasula</a></div>
+        <div class="talk-title">DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures
+</div>
+        <div class="talk-speaker"><a href="#speaker-3">Peiming Yang</a></div>
       </td>
       <td class="materials-cell">—</td>
     </tr>
@@ -70,7 +71,7 @@
     <tr>
       <td class="time-cell">13:30 – 13:55</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">PuDGhost: Interference from Non-Operand Data in Processing-using-DRAM</div>
         <div class="talk-speaker">Daichi Tokuda</div>
       </td>
       <td class="materials-cell">—</td>
@@ -78,7 +79,7 @@
     <tr>
       <td class="time-cell">13:55 – 14:20</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">In-DRAM Signature Generation Using Simultaneous Multiple-Row Activation: An Experimental Study of Off-The-Shelf DRAM Chips</div>
         <div class="talk-speaker">Umut Baser</div>
       </td>
       <td class="materials-cell">—</td>
@@ -94,7 +95,7 @@
     <tr>
       <td class="time-cell">14:45 – 15:10</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">Efficient Memory Management and Access Mechanisms for CPU-PIM Co-Execution Systems</div>
         <div class="talk-speaker"><a href="#speaker-6">Yilong Zhao</a></div>
       </td>
       <td class="materials-cell">—</td>
@@ -114,7 +115,8 @@
     <tr>
       <td class="time-cell">16:00 – 16:25</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">Revisiting Main Memory-Based Covert and Side Channel Attacks
+in the Context of Processing-in-Memory</div>
         <div class="talk-speaker">Nisa Bostanci</div>
       </td>
       <td class="materials-cell">—</td>
@@ -122,7 +124,7 @@
     <tr>
       <td class="time-cell">16:25 – 16:50</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">Simulation, Compilation, and Deployment Optimization for Near-DRAM Processing Architectures</div>
         <div class="talk-speaker"><a href="#speaker-7">Zhenhua Zhu</a></div>
       </td>
       <td class="materials-cell">—</td>
@@ -130,7 +132,7 @@
     <tr>
       <td class="time-cell">16:50 – 17:15</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">FPGA-Based Frameworks to Enable Fundamentally Better Computing Systems</div>
         <div class="talk-speaker">Ataberk Olgun</div>
       </td>
       <td class="materials-cell">—</td>
@@ -146,7 +148,7 @@
     <tr>
       <td class="time-cell">17:40 – 18:05</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">Programmer-Transparent Near-Data Processing Using Multiple Compute-Capable Resources in Solid State Drives</div>
         <div class="talk-speaker">Rakesh Nadig</div>
       </td>
       <td class="materials-cell">—</td>
@@ -173,13 +175,13 @@
 
     <div class="speaker-item" id="speaker-1">
         <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Liu Liu">
+            <img src="assets/images/speaker-liu.jpg" alt="Liu Liu">
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Liu Liu</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
+            <div class="speaker-affiliation">Rensselaer Polytechnic Institute</div>
             <div class="speaker-talk-title">"Memory-Centric Scaling of LLM Decoding Through Contextual Sparsity"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Liu Liu is an Assistant Professor in the Department of Electrical, Computer, and Systems Engineering and the Department of Computer Science at Rensselaer Polytechnic Institute (RPI). He holds a Ph.D. in Computer Science and an M.S. in Electrical and Computer Engineering from the University of California, Santa Barbara. He directs the Efficient, Parallel, and Intelligent Computing Lab at RPI, focusing the research on elastic AI computing systems and architecture design. He is a recipient of NSF CAREER Award (2025), Samsung Global Research Outreach Award (2023), and Peter J Frenkel Fellowship (2020) from the Institute of Energy Efficiency at UCSB.</p>
+            <p class="speaker-bio"><strong>Short Bio:</strong> Liu Liu is an Assistant Professor in the Department of Electrical, Computer, and Systems Engineering and the Department of Computer Science at Rensselaer Polytechnic Institute (RPI). He holds a Ph.D. in Computer Science and an M.S. in Electrical and Computer Engineering from the University of California, Santa Barbara. His research focuses on efficient AI computing systems and architecture design. He is a recipient of NSF CAREER Award (2025), Samsung Global Research Outreach Award (2023), and Peter J Frenkel Fellowship (2020) from the Institute of Energy Efficiency at UCSB.</p>
             <div class="speaker-abstract">
                 <strong>Abstract:</strong> Large language model inference is increasingly limited by the cost of moving contextual data, particularly the key-value cache, through the memory hierarchy. This talk presents a memory-centric view of scaling LLM decoding through contextual sparsity in memory access: not all context must be read at full precision, and not all prior tokens must be accessed individually. It presents two works: BitWeaver [ICS’25], which enables read-time precision scaling by retrieving stored data at dynamically truncated bitwidths, and STARC [ASPLOS’26], which improves sparse token access on PIM systems through clustering and remapping of semantically similar KV tokens. Together, these works suggest that future memory-centric LLM systems should expose sparsity-aware control over what context is read, at what precision, and from which memory layout, improving bandwidth efficiency, energy efficiency, and PIM utilization.
             </div>
@@ -203,30 +205,17 @@
 
     <div class="speaker-item" id="speaker-3">
         <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Peiming Yang">
+            <img src="assets/images/speaker-peiming.jpg" alt="Peiming Yang">
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Peiming Yang</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
-            <div class="speaker-talk-title">"Talk Title"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Short bio coming soon.</p>
+            <div class="speaker-affiliation">University of Toronto</div>
+            <div class="speaker-talk-title">"DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures
+"</div>
+            <p class="speaker-bio"><strong>Short Bio:</strong> Peiming Yang is a third-year Ph.D. student in Computer Science at the University of Toronto, advised by Professor Gennady Pekhimenko and Christina Giannoula. His research focuses on systems for deep learning, particularly the design of efficient infrastructures for machine learning training and inference through system-level optimizations and compilation technologies. His recent research focuses on designing an ML compiler for Processing-In-Memory systems.</p>
             <div class="speaker-abstract">
-                <strong>Abstract:</strong> Abstract coming soon.
-            </div>
-        </div>
-    </div>
+                <strong>Abstract:</strong> High-performance Host processors can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by leveraging the large memory bandwidth available at PIM cores. However, Host processor needs consecutive elements distributed across DRAM banks, while PIM cores need consecutive elements within their local banks. This necessitates data rearrangements in ML kernel execution that pose significant performance and programmability challenges, further exacerbated by the need to support diverse PIM devices. Current compilation approaches lack systematic optimization for diverse ML kernels and multiple PIM devices, and may largely ignore data rearrangement costs during the compute code optimization step. In our work. we show that data rearrangements and compute code optimization are interdependent, and need to be jointly optimized during the tuning process. Therefore, in this talk, we will introduce DCC, the first data-centric ML compiler for PIM systems that jointly co-optimizes data rearrangements and compute code in a unified tuning process. DCC integrates a multi-layer PIM abstraction to support multiple PIM backends. DCC enables effective co-optimization of data partitioning strategies with compute loop partitioning schemes. DCC applies PIM-specific code optimizations, and leverages a fast and accurate performance prediction model to select the best-performing code schedule for a given kernel on a target PIM architecture. Our evaluations show that DCC provides significant performance benefits across various ML kernels, LLMs, and PIM backends. DCC is open-sourced at https://github.com/SPIN-Research-Group/DCC.
 
-    <div class="speaker-item" id="speaker-4">
-        <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Sankeerth Durvasula">
-        </div>
-        <div class="speaker-info">
-            <h4><a href="#" target="_blank">Sankeerth Durvasula</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
-            <div class="speaker-talk-title">"Talk Title"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Short bio coming soon.</p>
-            <div class="speaker-abstract">
-                <strong>Abstract:</strong> Abstract coming soon.
             </div>
         </div>
     </div>
@@ -248,30 +237,30 @@
 
     <div class="speaker-item" id="speaker-6">
         <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Yilong Zhao">
+            <img src="assets/images/speaker-yilong.jpg" alt="Yilong Zhao">
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Yilong Zhao</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
-            <div class="speaker-talk-title">"Talk Title"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Short bio coming soon.</p>
+            <div class="speaker-affiliation">Shanghai Jiao Tong University</div>
+            <div class="speaker-talk-title">"Efficient Memory Management and Access Mechanisms for CPU-PIM Co-Execution Systems"</div>
+            <p class="speaker-bio"><strong>Short Bio:</strong> Yilong Zhao is a Ph.D. candidate in the School of Computer Science at Shanghai Jiao Tong University (SJTU), where he is advised by Prof. Li Jiang and is a member of the IMPACT Lab. His research focuses on in-memory computing architectures and AI acceleration, with multiple papers published in top-tier conferences such as ISCA and ASPLOS. He received his master's and bachelor's degrees from SJTU in 2021 and 2018, respectively.</p>
             <div class="speaker-abstract">
-                <strong>Abstract:</strong> Abstract coming soon.
+                <strong>Abstract:</strong> Processing-in-Memory (PIM) is a promising paradigm to overcome the "memory wall," yet its practical deployment is severely hindered by memory management overheads and hardware resource contention during CPU-PIM co-execution. To address these challenges, this presentation explores efficient memory management and access mechanisms to enable seamless, low-interference CPU-PIM coexistence across multiple system layers. UM-PIM (ISCA '24) is presented as a system-level architecture that establishes a uniform and shared memory space with dual-track management, achieving zero-copy task offloading while preserving the host CPU's interleaving bandwidth. Moving to the application layer, PUSHtap (ASPLOS '25) leverages concurrent CPU-PIM access through a unified data storage format with two-dimensional alignment to resolve the data-format dilemma in HTAP databases. Finally, COSM (ISCA '26) introduces an architectural-level cooperative scheduling framework tailored for mobile devices, mitigating bank conflicts and bus congestion during concurrent LLM inference via idleness-aware command insertion. Together, these multi-level techniques demonstrate that co-designing memory architectures, software interfaces, and scheduling policies can effectively eliminate interference, providing critical insights for building an efficient and harmonious CPU-PIM co-execution ecosystem.
             </div>
         </div>
     </div>
 
     <div class="speaker-item" id="speaker-7">
         <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Zhenhua Zhu">
+            <img src="assets/images/speaker-zhenhua.jpg" alt="Zhenhua Zhu">
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Zhenhua Zhu</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
-            <div class="speaker-talk-title">"Talk Title"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Short bio coming soon.</p>
+            <div class="speaker-affiliation">Tsinghua Shenzhen International Graduate School</div>
+            <div class="speaker-talk-title">"Simulation, Compilation, and Deployment Optimization for Near-DRAM Processing Architectures"</div>
+            <p class="speaker-bio"><strong>Short Bio:</strong> Zhenhua Zhu is an Assistant Professor at Tsinghua Shenzhen International Graduate School (SIGS) and a Visiting Scholar at HKUST. He received his Ph.D. and B.S. degrees from the Department of Electronic Engineering, Tsinghua University, in 2024 and 2018, respectively. His research interests include processing-in-memory, near-memory computing, and domain-specific computer architectures. He has published more than 60 papers, with over 2,100 citations. He has received HPCA 2025 Best Paper Honorable Mention Award and DATE 2023 Best Paper Nomination.</p>
             <div class="speaker-abstract">
-                <strong>Abstract:</strong> Abstract coming soon.
+                <strong>Abstract:</strong> Near-DRAM processing architectures (NDP) addresses the memory wall bottleneck by placing computation close to DRAM, exploiting high internal bandwidth and reducing off-chip data transfers. However, diverse NDP architectures differ in memory hierarchy, processing-unit placement, buffer design, dataflow constraints, and DRAM timing behavior, making efficient deployment difficult. This talk presents our work on simulation, compilation, and deployment optimization for NDP architectures. We first introduce UniNDP, a unified framework for architecture abstraction, instruction generation, cycle-level simulation, and design-space exploration across different NDP systems. We then discuss the challenges and opportunities of bringing NDP into the low-bit floating-point era, and present NDP compiler and data layout optimizations to improve end-to-end performance for low-bit floating-point data-based large language model inference.
             </div>
         </div>
     </div>
