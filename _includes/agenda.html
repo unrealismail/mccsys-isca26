@@ -87,7 +87,7 @@
     <tr>
       <td class="time-cell">14:20 – 14:45</td>
       <td class="talk-cell">
-        <div class="talk-title">Talk Title</div>
+        <div class="talk-title">Scaling the Memory Wall: Towards 3D-DRAM-based Accelerators for Efficient Generative Inference</div>
         <div class="talk-speaker"><a href="#speaker-5">Prashant Nair</a></div>
       </td>
       <td class="materials-cell">—</td>
@@ -222,15 +222,18 @@ in the Context of Processing-in-Memory</div>
 
     <div class="speaker-item" id="speaker-5">
         <div class="speaker-photo">
-            <img src="assets/images/speaker-placeholder.svg" alt="Prashant Nair">
+            <img src="assets/images/speaker-prashant.jpeg" alt="Prashant Nair">
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Prashant Nair</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
-            <div class="speaker-talk-title">"Talk Title"</div>
-            <p class="speaker-bio"><strong>Short Bio:</strong> Short bio coming soon.</p>
+            <div class="speaker-affiliation">University of British Columbia</div>
+            <div class="speaker-talk-title">"Scaling the Memory Wall: Towards 3D-DRAM-based Accelerators for Efficient Generative Inference"</div>
+            <p class="speaker-bio"><strong>Short Bio:</strong> Prashant J. Nair is an Associate Professor at the University of British Columbia (UBC) and also the lead architect of the 3D-memory architecture at d-Matrix. He leads the Systems and Architectures (STAR) Lab at UBC and is also an Affiliate Fellow of the Quantum Algorithms Institute. His research focuses on memory architectures and systems. Dr. Nair’s recognitions include the 2024 TCCA Young Architect Award, the 2025 DSN Test of Time Award, the HPCA 2023 Best Paper Award, a MICRO 2024 Best Paper nomination, and the HPCA 2025 Distinguished Artifact Award. Over the past decade, he has published more than 40 papers in top-tier venues. Prior to his promotion to Associate Professor, as an Assistant Professor, he was inducted into all three halls of fame of computer architecture: ISCA, MICRO, and HPCA.</p>
             <div class="speaker-abstract">
-                <strong>Abstract:</strong> Abstract coming soon.
+                <strong>Abstract:</strong> Generative AI now underpins search, digital assistants, and media applications, making inference cost a first-order design constraint. Unlike traditional compute-bound workloads, large language and speech models are typically limited by memory bandwidth and capacity rather than raw arithmetic throughput. Thus, their inference cost is driven as much by data movement as by compute, and therefore hinges on the memory system’s design. This concern is especially acute during autoregressive decoding, which must repeatedly stream model weights and key-value (KV) caches at high bandwidths and low latencies while also providing enough capacity to support long context windows and several concurrent users. To make matters worse, these demands are accelerating with state-of-the-art models now exceeding hundreds of billions of parameters, context windows expanding from 4K to 128K tokens and beyond, and mixture-of-experts designs introducing additional irregularity in memory access patterns. Thus, today’s memory technologies force difficult trade-offs. SRAM can deliver extremely high bandwidth, but at prohibitive area and capacity limits. HBM offers higher capacity, but remains constrained by achievable bandwidth and I/O power. Closing this gap will require a fundamental rethinking of how memory is integrated with accelerator logic.
+
+
+In this talk I will introduce our upcoming ISCA 2026 paper on the upcoming memory-centric accelerator from d-Matrix. This accelerator vertically integrates logic with 3D-stacked DRAM to deliver SRAM-level bandwidth and HBM-class capacity while substantially reducing energy consumption. I will describe the architectural challenges addressed by workload-aware channel mapping, optimized power management, topology-preserving redundancy, and thermal-aware reliability mechanisms, enabling the practical deployment of 3D-DRAM. Evaluations using models such as Llama-3.1, DeepSeek-V3, Canary, and Whisper show that our accelerator achieves significantly higher throughput and interactivity compared to HBM-based alternatives. I will conclude by examining the broader implications for computer architecture, particularly how advanced logic-memory integration through hybrid bonding and multi-high stacking can reshape inference cost structures and enable the next generation of trillion-parameter models.
             </div>
         </div>
     </div>
@@ -271,7 +274,7 @@ in the Context of Processing-in-Memory</div>
         </div>
         <div class="speaker-info">
             <h4><a href="#" target="_blank">Mateusz Juszczak</a></h4>
-            <div class="speaker-affiliation">Affiliation </div>
+            <div class="speaker-affiliation">Poznan University of Technology</div>
             <div class="speaker-talk-title">"Acceleration of the Prefiltering and Alignment Phases in MMseqs2 Using the Processing-in-Memory Approach"</div>
             <p class="speaker-bio"><strong>Short Bio:</strong> Mateusz Juszczak is a first-year M.Sc. student in the Faculty of and Telecommunications at Poznan University of Technology, advised by Prof. Paweł T. Wojciechowski. His recent work focuses on hardware-aware programming, computation acceleration, and high-performance computing (HPC). He received his B.Sc. degree in Computer Science in 2026, with a thesis dedicated to implementing data-intensive bioinformatics pipelines on processing-in-memory (PIM) systems.</p>
             <div class="speaker-abstract">
